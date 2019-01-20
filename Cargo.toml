@@ -26,8 +26,13 @@ rustc-serialize = "0.3"
 [dev-dependencies]
 rand = "0.3"
 image = ">=0.10, <=0.19"
+bencher ="*"
 
 [dependencies.image]
 version = ">=0.10, <=0.19"
 optional = true
 
+[[bench]]
+path = "Benchmarks/bench.rs"
+name = "benchmark"
+harness = false
